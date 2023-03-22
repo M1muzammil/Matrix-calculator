@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="allbody">   
+   
+
+<h1>MATRISES</h1>
+<div class="before500" ><h2>Enter your values and makes your math eassy</h2></div>
+<span class="after500"><h2>Makes your math eassy</h2></span>
+    <form onsubmit="calculatematrix();return false">
+   
+   <div class="desing"> 
+<span class="after500" class="h500">first value</span>
+      <span class="input1"> <div class="form1">
+         <li><input id="i1" type="text" size="4"  ></li>
+         <li><input  id="i2" type="text" size="4" ></li>
+         <li><input id="i3" type="text" size="4" ></li>
+      </div>
+      <div class="form1">
+         <li><input id="i4" type="text" size="4" ></li>
+         <li><input id="i5" type="text" size="4" ></li>
+         <li><input id="i6" type="text" size="4" ></li>
+      </div>
+      <div class="form1"> 
+            <li><input id="i7" type="text" size="4" ></li>
+            <li><input id="i8" type="text" size="4" ></li>
+            <li><input id="i9" type="text" size="4" ></li>
+      </div></span>
+   
+   <span class="p"><p>M <br> A <br> T <br>R <br> I <br> X </p></span>
+   <span class="after500" class="h500">your seconde value </span>
+<span class="input2"> <div class="form1">
+   <li><input id="i10"  type="text" size="4"  ></li>
+   <li><input id="i11" type="text" size="4" ></li>
+   <li><input id="i12" type="text" size="4" ></li>
+</div>
+<div class="form1">
+   <li><input id="i13" type="text" size="4" ></li>
+   <li><input id="i14" type="text" size="4" ></li>
+   <li><input id="i15" type="text" size="4" ></li>
+</div>
+<div class="form1"> 
+      <li><input id="i16" type="text" size="4" ></li>
+      <li><input id="i17" type="text" size="4" ></li>
+      <li><input id="i18" type="text" size="4" ></li>
+</div></span></div>
+<div class="btt"><button class="btt">calculate</button> 
+</div>
+
+
+  
+   <h2>Result</h2>
+   <div class="desing"> 
+
+      <span> <div class="form2">
+         <li><p id="re1"  class="p2" > </p></li>
+         <li><p id="re2" class="p2" ></p></li>
+         <li><p id="re3"  class="p2"></p></li>
+      </div>
+      <div class="form2">
+         <li><p id="re4"  class="p2"> </p></li>
+         <li><p id="re5"  class="p2"></p></li>
+         <li><p id="re6"  class="p2"></p></li>
+      </div>
+      <div class="form2"> 
+         <li><p id="re7"  class="p2"> </p></li>
+         <li><p id="re8" class="p2" ></p></li>
+         <li><p id="re9"  class="p2"></p></li>
+      </div></span>
+   
+      
+    
+   
+   </form> 
+      
+   
+   <script>
+
+function calculatematrix(){
+
+
+let i1 = document.querySelector("#i1").value
+i1= Number(i1)
+
+
+let i2 = document.querySelector("#i2").value
+i2= Number(i2)
+
+
+let i3 = document.querySelector("#i3").value
+i3= Number(i3)
+
+let i4 = document.querySelector("#i4").value
+i4= Number(i4)
+
+let i5 = document.querySelector("#i5").value
+i5= Number(i5)
+
+let i6 = document.querySelector("#i6").value
+i6= Number(i6)
+
+let i7 = document.querySelector("#i7").value
+i7= Number(i7)
+
+let i8 = document.querySelector("#i8").value
+i8= Number(i8)
+
+let i9 = document.querySelector("#i9").value
+i9= Number(i9)
+
+
+
+
+let i10 = document.querySelector("#i10").value
+i10= Number(i10)
+
+
+let i11 = document.querySelector("#i11").value
+i11= Number(i11)
+
+
+let i12 = document.querySelector("#i12").value
+i12= Number(i12)
+
+let i13 = document.querySelector("#i13").value
+i13= Number(i4)
+
+let i14 = document.querySelector("#i14").value
+i14= Number(i14)
+
+let i15 = document.querySelector("#i15").value
+i15= Number(i15)
+
+let i16 = document.querySelector("#i16").value
+i16= Number(i16)
+
+let i17 = document.querySelector("#i17").value
+i17= Number(i17)
+
+let i18 = document.querySelector("#i18").value
+i18= Number(i18)
+let SecondValues = [i10,i11,i12,
+               i13,i14,i15,
+               i16,i17,i18]
+               
+let FirstValues = [i1,i2,i3
+                  ,i4,i5,i6,
+                   i7,i8,i9]
+  
+
+    re1 = (FirstValues[0]*SecondValues[0]) + (FirstValues[1]*SecondValues[3]) + (FirstValues[2]*SecondValues[6])
+    re2 = (FirstValues[0]*SecondValues[1]) + (FirstValues[1]*SecondValues[4]) + (FirstValues[2]*SecondValues[7])
+    re3 = (FirstValues[0]*SecondValues[2]) + (FirstValues[1]*SecondValues[5]) + (FirstValues[2]*SecondValues[8])
+    re4 = (FirstValues[3]*SecondValues[0]) + (FirstValues[4]*SecondValues[3]) + (FirstValues[5]*SecondValues[6])
+    re5 = (FirstValues[3]*SecondValues[1]) + (FirstValues[4]*SecondValues[4]) + (FirstValues[5]*SecondValues[7])
+    re6 = (FirstValues[3]*SecondValues[2]) + (FirstValues[4]*SecondValues[5]) + (FirstValues[5]*SecondValues[8])
+    re7 = (FirstValues[6]*SecondValues[0]) + (FirstValues[7]*SecondValues[3]) + (FirstValues[8]*SecondValues[6])
+    re8 = (FirstValues[6]*SecondValues[1]) + (FirstValues[7]*SecondValues[4]) + (FirstValues[8]*SecondValues[7])
+    re9 = (FirstValues[6]*SecondValues[2]) + (FirstValues[7]*SecondValues[5]) + (FirstValues[8]*SecondValues[8])
+
+    document.querySelector("#re1" ).innerHTML = re1
+    document.querySelector("#re2" ).innerHTML = re2
+    document.querySelector("#re3" ).innerHTML = re3
+    document.querySelector("#re4" ).innerHTML = re4
+    document.querySelector("#re5" ).innerHTML = re5
+    document.querySelector("#re6" ).innerHTML = re6
+    document.querySelector("#re7" ).innerHTML = re7 
+    document.querySelector("#re8" ).innerHTML = re8 
+    document.querySelector("#re9" ).innerHTML = re9 
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+   </script>
+   
+  
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
